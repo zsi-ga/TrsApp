@@ -1,0 +1,38 @@
+><div class="container mt-5">
+  <div class="p-3 mb-2 bg-primary-subtle text-emphasis-primary"></div>
+  <div class="card">
+    
+      <div class="d-flex justify-content-between p-3">
+
+          
+
+
+              <li>
+              <div class= "card">1. Az oktató mindig pontosan kezdi és fejezi be a tanórát.</div>
+              <div class= "card">2. Véleményem szerint a rendelkezésre álló időt megfelelően kihasználjuk, mert az oktató mindig hasznos és érdekes órákat tart.</div>
+              <div class= "card">3. Az oktató magyarázatai számomra érthetők, beszédtempója követhető.</div>
+              <div class= "card">4. Véleményem szerint megfelelő mennyiségű és tartalmú tananyagot biztosít az oktató ahhoz, hogy a tantárgy követelményeit teljesíteni tudjam.</div>
+              <div class= "card">5. Az órákon az oktató bevonja a tanulókat a tanulás folyamatába, előadásai mellett változatosan végzünk önálló, pár- és csoportmunkát is. </div>
+              <div class= "card">6. Ismerem a munkám, az elvégzendő feladataim értékelési szempontjait, és teljesítményemről mindig megfelelő visszajelzést kapok (pl. jegyek vagy szöveges értékelés formájában).</div>
+              <div class= "card">7. Véleményem szerint az oktató megfelelően használja az iskola Google Classroomját (a tananyagok megosztása, a feladatok kiosztása, a számonkérések bonyolítása és az értékelések/visszajelzések adása szempontjából).</div>
+              <div class= "card">8. Az oktatás/tanulás során felmerülő problémákat az oktatóval közösen meg tudjuk oldani.</div>
+             </li>
+
+        
+      </div>
+      <div class="d-flex justify-content-between">
+        <button [disabled]="currentQuestion===0" class="btn" (click)="previousQuestion()"><i class="fa text-primary fa-chevron-left fa-3x" aria-hidden="true"></i></button>
+        <button class="btn" (click)="resetTest()"><i class="fa fa-refresh text-primary fa-3x" aria-hidden="true"></i></button>
+        <button class="btn" (click)="nextQuestion()"><i class="fa text-primary fa-chevron-right fa-3x" aria-hidden="true"></i></button>
+      </div>
+
+      <div class="timer">
+        <h5>{{counter}} sec ⏱</h5>
+    </div>
+
+
+    
+</div>
+
+
+	

@@ -1,0 +1,18 @@
+<h2>Dolgozók</h2>
+<table class="table table.striped">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Név</th>
+            <th>pontszám</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{ employee.id }}</td>
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.score}}</td>
+        </tr>
+    </tbody>
+</table>
